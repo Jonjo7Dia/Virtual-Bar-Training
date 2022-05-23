@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Training</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+           
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="pop-up small">
+            <div class="exit-div">
+                <button class="exit"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="score-greeting">
+                <h4>Congratulations</h4>
+            </div>
+            <div class="score">
+                <h4>Your Score was </h4>
+            </div>
+            <div class="score-emoji">
+                <img src="score-emojis/congrats.png" alt="">
+            </div>
+            <div class="restart-div">
+                <h4>Do you want to try again?</h4>
+                <div class="restart-review">
+                    <button class="btn btn-primary restart" type="submit">restart</button>
+                    <button class="btn btn-primary review" type="submit">review</button>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="pop-up big">
+            <div class="exit-div">
+                <button class="exit"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="recipe-method pop-content">
+                <div class="pop-heading">
+                    <h2>RECIPE</h2>
+                </div>
+                <div class="pop-list list-one">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pop-list list-two">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="cocktail-png pop-content">
+                <div class="pop-heading pop-cocktail">
+                    <h2>COCKTAIL NAME</h2>
+                </div>
+                <div class="pop-img">
+                    <img src="drinks-images/Martini.png" alt="">
+                </div>
+            </div>
+            <div class="cocktail-history pop-content">
+                <div class="pop-heading">
+                    <h2>HISTORY</h2>
+                </div>
+                <div class="pop-text">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <header>
+           <div class="container-fluid col-8">
+               <div class="row">
+                   <div class="nav-left  col-4">
+                    <ul class="nav justify-content-around">
+                        <li class="nav-item flash-card-link">Flashcards</li>
+
+                    </ul>
+                   </div>
+                   <div class="heading col-4 homepage-link">
+                       <h2>online</h2>
+                       <h1>bar training</h1>
+                   </div>
+                   <div class="nav-right col-4">
+                    <ul class="nav justify-content-around">
+                        <li class="nav-item history-link">Cocktail Stories</li>
+                        <li class="nav-item quiz-link">Quiz</li>
+                    </ul>
+                   </div>
+                   
+               </div>
+           </div>
+    </header>
+    <main>
+       <div class="container-fluid">
+           <div class="row">
+                <div class="col-2 cocktails left">
+                    <div class="wrapper">
+                        <div class="cocktails-heading">
+                            <h3>Cocktail of the day
+                            </h3>
+                        </div>
+                        <div class="must-knows">
+                            <ul>
+                                <li>
+                                    <div class="mk drink-day">
+                                        <h4>Martini</h4>
+                                        <img src="drinks-images/Martini.png" alt="Martini" class="cocktail-img-right">
+                                    </div>
+                                </li>
+                            
+                            </ul>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 main-nav container-fluid homepage">
+                    <div class="row justify-content-around">
+                        <div class="preview flashcards col-3 flash-card-link">
+                            <div class="wrapper">
+                                <div class="heading">
+                                    <h2>flashcards</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Go through the classic cocktails 
+                                        and practice through flashcards</p>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="preview cocktail-stories history-link col-3">
+                            <div class="wrapper">
+                                <div class="heading">
+                                    <h2>cocktail stories</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Learn more about the cocktail
+                                        stories too show off</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="preview quiZ col-3 quiz-link">
+                            <div class="wrapper">
+                                <div class="heading">
+                                    <h2>quiz</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Practice your knowledge on 
+                                        classic cocktails through the quiz</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-7 main-nav container-fluid history all-pages">
+                    <div class="wrapper">
+                     
+                    </div>
+                </div>
+                <div class="col-7 main-nav container-fluid flash all-pages">
+                    <div class="wrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="flashcard-main front">
+                            <div class="flashcard">
+                                <div class="flashcard-image">
+                                    <img id="drinks-image" src="" alt="">
+                                </div>
+                                <div class="instructions">
+                                    <h3>Click on the card to see the name and recipe</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard-main back">
+                            <div class="flashcard">
+                                <div class="flashcard-image">
+                                    <div class="cocktail-name">
+                                        <h3 id="cocktailTitle"></h3>
+                                    </div>
+                                    <div class="ingredients_method">
+                                        <div class="ingredients">
+                                            <div class="wrapper">
+                                                <h4>Ingredients</h4>
+                                                <ul id="ingredientList">
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="method">
+                                            <div class="wrapper">
+                                                <h4>Recipe</h4>
+                                                <ul id="recipeList">
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructions">
+                                    
+                                    <h3>Click on the card to see photo</h3>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashcardsControl">
+                        <button class= "flash-button" id ="last-card"><i class="fas fa-angle-left"></i></button>
+                        <button class= "flash-button" id="next-card"><i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-7 main-nav container-fluid quiz all-pages">
+                    <div class="nav difficulty">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active difficulty-easy" href="#">Easy</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link difficulty-hard" href="#">Hard</a>
+                            </li>
+                          </ul>  
+                    </div>
+                    <div class="wrapper easy">   
+                        <div class="multiple-choice quiz-ingredients">
+                            <h3>Multiple Choice - Ingredients</h3>
+                            <h4>Choose the ingredients that match the cocktail</h4>
+                        
+                            <div class="image-questions 1">
+                                <div class="mc-questions">
+                                    <div class="mc-heading">
+                                        <h3>1.  Name</h3>
+                                    </div>
+                                    <div class="mc-radio">
+                                        <div class="radio-label 1">
+                                            <input type="radio" id="ingredient1-1" name="ingredient1">
+                                            <label for="ingredient1-1">drinks</label>
+                                        </div>
+                                        <div class="radio-label 2">
+                                            <input type="radio" id="ingredient1-2" name="ingredient1">
+                                            <label for="ingredient1-2">drinks</label>
+                                        </div>
+                                        <div class="radio-label 3">
+                                            <input type="radio" id="ingredient1-3" name="ingredient1">
+                                            <label for="ingredient1-3">drinks</label>
+                                        </div>
+                                        <div class="radio-label 4">
+                                            <input type="radio" id="ingredient1-4" name="ingredient1">
+                                            <label for="ingredient1-4">drinks</label>
+                                        </div>
+                                    </div>
+                                    
+                                        
+                                </div>
+                                <div class="mc-image">
+                                    <img src="drinks-images/Martini.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-questions 2">
+                                <div class="mc-questions">
+                                    <div class="mc-heading">
+                                        <h3>1.  Name</h3>
+                                    </div>
+                                    <div class="mc-radio">
+                                        <div class="radio-label 1">
+                                            <input type="radio" id="ingredient2-1" name="ingredient2">
+                                            <label for="ingredient2-1">drinks</label>
+                                        </div>
+                                        <div class="radio-label 2">
+                                            <input type="radio" id="ingredient2-2" name="ingredient2">
+                                            <label for="ingredient2-2">drinks</label>
+                                        </div>
+                                        <div class="radio-label 3">
+                                            <input type="radio" id="ingredient2-3" name="ingredient2">
+                                            <label for="ingredient2-3">drinks</label>
+                                        </div>
+                                        <div class="radio-label 4">
+                                            <input type="radio" id="ingredient2-4" name="ingredient2">
+                                            <label for="ingredient2-4">drinks</label>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="mc-image">
+                                    <img src="drinks-images/Martini.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-questions 3">
+                                <div class="mc-questions">
+                                    <div class="mc-heading">
+                                        <h3>1.  Name</h3>
+                                    </div>
+                                    <div class="mc-radio">
+                                        <div class="radio-label 1">
+                                            <input type="radio" id="ingredient3-1" name="ingredient3">
+                                            <label for="ingredient3-1">drinks</label>
+                                        </div>
+                                        <div class="radio-label 2">
+                                            <input type="radio" id="ingredient3-2" name="ingredient3">
+                                            <label for="ingredient3-2">drinks</label>
+                                        </div>
+                                        <div class="radio-label 3">
+                                            <input type="radio" id="ingredient3-3" name="ingredient3">
+                                            <label for="ingredient3-3">drinks</label>
+                                        </div>
+                                        <div class="radio-label 4">
+                                            <input type="radio" id="ingredient3-4" name="ingredient3">
+                                            <label for="ingredient3-4">drinks</label>
+                                        </div>
+                                    </div>
+                                    
+                                        
+                                </div>
+                                <div class="mc-image">
+                                    <img src="drinks-images/Martini.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+               
+                        <div class="multiple-choice quiz-recipe">
+                            <h3>Multiple Choice - Recipe</h3>
+                            <h4>Choose the method that match the cocktail</h4>
+                            <div class="image-questions 1">
+                                <div class="mc-questions">
+                                    <div class="mc-heading">
+                                        <h3>1.  Name</h3>
+                                    </div>
+                                    <div class="mc-radio">
+                                        <div class="radio-label 1">
+                                            <input type="radio" id="recipe1-1" name="recipe1">
+                                            <label for="recipe1-1">drinks</label>
+                                        </div>
+                                        <div class="radio-label 2">
+                                            <input type="radio" id="recipe1-2" name="recipe1">
+                                            <label for="recipe1-2">drinks</label>
+                                        </div>
+                                        <div class="radio-label 3">
+                                            <input type="radio" id="recipe1-3" name="recipe1">
+                                            <label for="recipe1-3">drinks</label>
+                                        </div>
+                                        <div class="radio-label 4">
+                                            <input type="radio" id="recipe1-4" name="recipe1">
+                                            <label for="recipe1-4">drinks</label>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="mc-image">
+                                    <img src="drinks-images/Martini.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-questions 2">
+                                <div class="mc-questions">
+                                    <div class="mc-heading">
+                                        <h3>1.  Name</h3>
+                                    </div>
+                                    <div class="mc-radio">
+                                        <div class="radio-label 1">
+                                            <input type="radio" id="recipe2-1" name="recipe2">
+                                            <label for="recipe2-1">drinks</label>
+                                        </div>
+                                        <div class="radio-label 2">
+                                            <input type="radio" id="recipe2-2" name="recipe2">
+                                            <label for="recipe2-2">drinks</label>
+                                        </div>
+                                        <div class="radio-label 3">
+                                            <input type="radio" id="recipe2-3" name="recipe2">
+                                            <label for="recipe2-3">drinks</label>
+                                        </div>
+                                        <div class="radio-label 4">
+                                            <input type="radio" id="recipe2-4" name="recipe2">
+                                            <label for="recipe2-4">drinks</label>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="mc-image">
+                                    <img src="drinks-images/Martini.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-questions 3">
+                                <div class="mc-questions">
+                                    <div class="mc-heading">
+                                        <h3>1.  Name</h3>
+                                    </div>
+                                    <div class="mc-radio">
+                                        <div class="radio-label 1">
+                                            <input type="radio" id="recipe3-1" name="recipe3">
+                                            <label for="recipe3-1">drinks</label>
+                                        </div>
+                                        <div class="radio-label 2">
+                                            <input type="radio" id="recipe3-2" name="recipe3">
+                                            <label for="recipe3-2">drinks</label>
+                                        </div>
+                                        <div class="radio-label 3">
+                                            <input type="radio" id="recipe3-3" name="recipe3">
+                                            <label for="recipe3-3">drinks</label>
+                                        </div>
+                                        <div class="radio-label 4">
+                                            <input type="radio" id="recipe3-4" name="recipe3">
+                                            <label for="recipe3-4">drinks</label>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="mc-image">
+                                    <img src="drinks-images/Martini.png" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <h3>Match the Drinks with the Ingredients and Recipe</h3>
+                            <h4>Drag and sort the images</h4>
+                        <div class="matching-task">
+                            
+                            <div class="question">
+                                <div class="sorting-task">
+                                    <ul id="sort" >
+                                        <li draggable="true">
+                                            <div class="drink-match one">
+                                                <div class="heading">
+                                                    <h3>Name</h3>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="drinks-images/Espresso Martini.png" alt="">
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li draggable="true">
+                                            <div class="drink-match two">
+                                                <div class="heading">
+                                                    <h3>Name</h3>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="drinks-images/Mojito.png" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li draggable="true">
+                                            <div class="drink-match three">
+                                                <div class="heading">
+                                                    <h3>Name</h3>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="drinks-images/Martini.png" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        
+                        <div class="answer">
+                            <div class="sorting-task">
+                                <ul id="answers">
+                                    <li class="solution">
+                                        <div class="drink-answer one"> 
+                                            <div class="recipe-method">
+                                                <div class="ingredients">
+                                                    <div class="heading">
+                                                        <h4>Ingredients</h4>
+                                                    </div>
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="method">
+                                                    <div class="heading">
+                                                        <h4>Recipe</h4>
+                                                    </div>
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="solution"> 
+                                        <div class="drink-answer two">
+                                            <div class="recipe-method">
+                                                <div class="ingredients">
+                                                    <div class="heading">
+                                                        <h4>Ingredients</h4>
+                                                    </div>
+                                                        <ul>
+
+                                                        </ul>
+                                                    
+                                                </div>
+                                                <div class="method">
+                                                    <div class="heading">
+                                                        <h4>Recipe</h4>
+                                                    </div>
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="solution">
+                                        <div class="drink-answer three">
+                                            <div class="recipe-method">
+                                                <div class="ingredients">
+                                                    <div class="heading">
+                                                        <h4>Ingredients</h4>
+                                                    </div>
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="method">
+                                                    <div class="heading">
+                                                        <h4>Recipe</h4>
+                                                    </div>
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div class="submit">
+                        <button class="btn btn-primary" type="submit" id="submit">submit</button>
+                        <button class="btn btn-primary restart" type="submit">restart</button>
+                    </div>
+                </div>
+                <div class="wrapper hard">
+                    <div class="fill-questions">
+                        <div class="fill-heading">
+                            <h2>Fill in the Missing Information</h3>
+                        </div>
+                        <div class="fill-question one">
+                            <div class="input input-ingredients">
+                                <div class="input-heading">
+                                    <h2>Fill in the Ingredients</h2>
+                                </div>
+                                <div class="user-input ingr">
+
+                                </div>
+                            </div>
+                            <div class="input input-image">
+                                <div class="input-heading">
+                                    <h2>Name</h2>
+                                </div>
+                                <div class="input-img">
+                                    <img src="drinks-images/Moscow Mule.png" alt="">
+                                </div>
+                            </div>
+                            <div class="input input-methods">
+                                <div class="input-heading">
+                                    <h2>Fill in the Methods</h2>
+                                </div>
+                                <div class="user-input metods">
+                                    <div class="input-method">
+                                        <label for="Method">Method</label>
+                                    <select name="Method" class="method-select user-sel">
+                                        <option value="none">Select Method</option>
+                                    </select>
+                                    <div class = "correct-answer metod"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Glass">Glass</label>
+                                    <select name="Glass" class="glass-select user-sel">
+                                        <option value="none">Select Glass</option>
+                                    </select>
+                                    <div class = "correct-answer gles"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Ice">Ice</label>
+                                    <select name="Ice" class='ice-select user-sel'>
+                                        <option value="none">Select Ice</option>
+                                    </select>
+                                    <div class = "correct-answer ic"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Garnish"> Garnish</label>
+                                    <select class="garnish-select user-sel" name="Garnish">
+                                        <option value="none">Select Garnish</option>
+                                    </select>
+                                    <div class = "correct-answer gernish"> <h2>Hello </h2> </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fill-question two">
+                            <div class="input input-ingredients">
+                                <div class="input-heading">
+                                    <h2>Fill in the Ingredients</h2>
+                                </div>
+                                <div class="user-input ingr">
+
+                                </div>
+                            </div>
+                            <div class="input input-image">
+                                <div class="input-heading">
+                                    <h2>Name</h2>
+                                </div>
+                                <div class="input-img">
+                                    <img src="drinks-images/Moscow Mule.png" alt="">
+                                </div>
+                            </div>
+                            <div class="input input-methods">
+                                <div class="input-heading">
+                                    <h2>Fill in the Methods</h2>
+                                </div>
+                                <div class="user-input metods">
+                                    <div class="input-method">
+                                        <label for="Method">Method</label>
+                                    <select name="Method" class="method-select user-sel">
+                                        <option value="none">Select Method</option>
+                                    </select>
+                                    <div class = "correct-answer metod"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Glass">Glass</label>
+                                    <select name="Glass" class="glass-select user-sel">
+                                        <option value="none">Select Glass</option> 
+                                    </select>
+                                    <div class = "correct-answer gles"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Ice">Ice</label>
+                                    <select name="Ice" class='ice-select user-sel'>
+                                        <option value="none">Select Ice</option>
+                                    </select>
+                                    <div class = "correct-answer ic"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Garnish"> Garnish</label>
+                                    <select class="garnish-select user-sel" name="Garnish">
+                                        <option value="none">Select Garnish</option>
+                                    </select>
+                                    <div class = "correct-answer gernish"> <h2>Hello </h2> </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fill-question three">
+                            <div class="input input-ingredients">
+                                <div class="input-heading">
+                                    <h2>Fill in the Ingredients</h2>
+                                </div>
+                                <div class="user-input ingr">
+
+                                </div>
+                            </div>
+                            <div class="input input-image">
+                                <div class="input-heading">
+                                    <h2>Name</h2>
+                                </div>
+                                <div class="input-img">
+                                    <img src="drinks-images/Moscow Mule.png" alt="">
+                                </div>
+                            </div>
+                            <div class="input input-methods">
+                                <div class="input-heading">
+                                    <h2>Fill in the Methods</h2>
+                                </div>
+                                <div class="user-input metods">
+                                    <div class="input-method">
+                                        <label for="Method">Method</label>
+                                    <select name="Method" class="method-select user-sel">
+                                        <option value="none">Select Method</option>
+                                    </select>
+                                    <div class = "correct-answer metod"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Glass">Glass</label>
+                                    <select name="Glass" class="glass-select user-sel">
+                                        <option value="none">Select Glass</option>
+                                    </select>
+                                    <div class = "correct-answer gles"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Ice">Ice</label>
+                                    <select name="Ice" class='ice-select user-sel'>
+                                        <option value="none">Select Ice</option>
+                                    </select>
+                                    <div class = "correct-answer ic"> <h2>Hello </h2> </div>
+                                    </div>
+                                    <div class="input-method">
+                                        <label for="Garnish"> Garnish</label>
+                                    <select class="garnish-select user-sel" name="Garnish">
+                                        <option value="none">Select Garnish</option>
+                                    </select>
+                                    <div class = "correct-answer gernish"> <h2>Hello </h2> </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit2">
+                        <button class="btn btn-primary" type="submit" id="submit2">submit</button>
+                        <button class="btn btn-primary restart restart2">restart</button>
+                    </div>
+
+                </div>
+                    
+                </div>
+                
+                <div class="col-2 cocktails right">
+                    <div class="wrapper">
+                        <div class="cocktails-heading">
+                            <h3>Must Know Cocktails
+                            </h3>
+                            <div class="must-knows">
+                                <ul>
+                                    <li>
+                                        <div class="mk martini">
+                                            <h4>Martini</h4>
+                                            <img src="drinks-images/Martini.png" alt="Martini" class="cocktail-img-right">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mk negroni">
+                                            <h4>Negroni</h4>
+                                            <img src="drinks-images/Negroni.png" alt="Negroni" class="cocktail-img-right">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mk old-fashion">
+                                            <h4>Old Fashioned</h4>
+                                            <img src="drinks-images/Old Fashioned.png" alt="Old Fashion" class="cocktail-img-right">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mk mojito">
+                                            <h4>Mojito</h4>
+                                            <img src="drinks-images/Mojito.png" alt="Mojito" class="cocktail-img-right">
+
+                                        </div>
+                                    </li>
+                                </ul>
+                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+           </div>
+       </div>
+
+    </main>
+    <footer>
+        <div class="credits">
+            <p>Jonathan Hjelmström © 2021</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

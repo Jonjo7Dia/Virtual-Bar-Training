@@ -1,0 +1,12 @@
+ [
+        {
+        "Name":"Aperol Spritz",
+        "Ingredients":["50ml Aperol","25ml Soda Water","75ml Prosecco"], 
+        "Recipe":["Build", "Tall Wine Glass", "Cubes", "Orange Slice"]
+        },
+        {
+        "Name":"White Russian",
+        "Ingredients":["25ml Grey Goose Vodka","25ml Tia Maria","25ml Cream"], 
+        "Recipe":["Build", "Tall Wine Glass", "Cubes", "Orange Slice"]
+        }
+    ]
